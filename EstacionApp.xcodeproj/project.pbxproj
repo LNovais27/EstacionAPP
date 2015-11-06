@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB83C8331BE8D64C006DD880 /* Xkiaa.png in Resources */ = {isa = PBXBuildFile; fileRef = FB83C8321BE8D64C006DD880 /* Xkiaa.png */; settings = {ASSET_TAGS = (); }; };
+		FBADBF141BDC21DD00E5DFB3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBADBF131BDC21DD00E5DFB3 /* CoreLocation.framework */; };
+		FBADBF161BDC227600E5DFB3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBADBF151BDC227600E5DFB3 /* MapKit.framework */; };
+		FBD09FB81BEA180400EABA9B /* VeiculosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD09FB71BEA180400EABA9B /* VeiculosTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FBD09FBB1BEA186500EABA9B /* VeiculosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD09FBA1BEA186500EABA9B /* VeiculosViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FBD09FBD1BEA1BE000EABA9B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD09FBC1BEA1BE000EABA9B /* CoreData.framework */; };
+		FBD09FC01BEA1C1700EABA9B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBD09FBE1BEA1C1700EABA9B /* Model.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		FBFE36A41BDC1EA00040818B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36A31BDC1EA00040818B /* main.m */; };
+		FBFE36A71BDC1EA00040818B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36A61BDC1EA00040818B /* AppDelegate.m */; };
+		FBFE36AA1BDC1EA00040818B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36A91BDC1EA00040818B /* ViewController.m */; };
+		FBFE36AD1BDC1EA00040818B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFE36AB1BDC1EA00040818B /* Main.storyboard */; };
+		FBFE36B01BDC1EA00040818B /* EstacionApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36AE1BDC1EA00040818B /* EstacionApp.xcdatamodeld */; };
+		FBFE36B21BDC1EA00040818B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFE36B11BDC1EA00040818B /* Assets.xcassets */; };
+		FBFE36B51BDC1EA00040818B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFE36B31BDC1EA00040818B /* LaunchScreen.storyboard */; };
+		FBFE36C01BDC1EA00040818B /* EstacionAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36BF1BDC1EA00040818B /* EstacionAppTests.m */; };
+		FBFE36CB1BDC1EA00040818B /* EstacionAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36CA1BDC1EA00040818B /* EstacionAppUITests.m */; };
+		FBFE36F41BDC20110040818B /* HistoricoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36D91BDC20110040818B /* HistoricoTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FBFE36F61BDC20110040818B /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36DD1BDC20110040818B /* MenuViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FBFE36F71BDC20110040818B /* MeusVeiculosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36DF1BDC20110040818B /* MeusVeiculosTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FBFE36F81BDC20110040818B /* MinhaContaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36E11BDC20110040818B /* MinhaContaTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FBFE36F91BDC20110040818B /* UtilizaVagaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36E31BDC20110040818B /* UtilizaVagaViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FBFE36FA1BDC20110040818B /* ViewControllerCadastraVeiculo.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36E51BDC20110040818B /* ViewControllerCadastraVeiculo.m */; settings = {ASSET_TAGS = (); }; };
+		FBFE36FB1BDC20110040818B /* ViewControllerCadastro.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36E71BDC20110040818B /* ViewControllerCadastro.m */; settings = {ASSET_TAGS = (); }; };
+		FBFE36FC1BDC20110040818B /* ViewControllerConfigura.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36E91BDC20110040818B /* ViewControllerConfigura.m */; settings = {ASSET_TAGS = (); }; };
+		FBFE36FD1BDC20110040818B /* ViewControllerEsqueceuSenha.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36EB1BDC20110040818B /* ViewControllerEsqueceuSenha.m */; settings = {ASSET_TAGS = (); }; };
+		FBFE36FE1BDC20110040818B /* ViewControllerHistorico.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36ED1BDC20110040818B /* ViewControllerHistorico.m */; settings = {ASSET_TAGS = (); }; };
+		FBFE36FF1BDC20110040818B /* ViewControllerLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36EF1BDC20110040818B /* ViewControllerLogin.m */; settings = {ASSET_TAGS = (); }; };
+		FBFE37001BDC20110040818B /* ViewControllerMeusVeiculos.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36F11BDC20110040818B /* ViewControllerMeusVeiculos.m */; settings = {ASSET_TAGS = (); }; };
+		FBFE37011BDC20110040818B /* ViewControllerMinhaConta.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36F31BDC20110040818B /* ViewControllerMinhaConta.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBFE36BC1BDC1EA00040818B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBFE36971BDC1EA00040818B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBFE369E1BDC1EA00040818B;
+			remoteInfo = EstacionApp;
+		};
+		FBFE36C71BDC1EA00040818B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBFE36971BDC1EA00040818B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBFE369E1BDC1EA00040818B;
+			remoteInfo = EstacionApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB83C8321BE8D64C006DD880 /* Xkiaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Xkiaa.png; path = Assets.xcassets/Xkiaa.png; sourceTree = "<group>"; };
+		FBADBF131BDC21DD00E5DFB3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FBADBF151BDC227600E5DFB3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FBD09FB61BEA180400EABA9B /* VeiculosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeiculosTableViewController.h; sourceTree = "<group>"; };
+		FBD09FB71BEA180400EABA9B /* VeiculosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeiculosTableViewController.m; sourceTree = "<group>"; };
+		FBD09FB91BEA186500EABA9B /* VeiculosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeiculosViewController.h; sourceTree = "<group>"; };
+		FBD09FBA1BEA186500EABA9B /* VeiculosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeiculosViewController.m; sourceTree = "<group>"; };
+		FBD09FBC1BEA1BE000EABA9B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FBD09FBF1BEA1C1700EABA9B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FBFE369F1BDC1EA00040818B /* EstacionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EstacionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFE36A31BDC1EA00040818B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBFE36A51BDC1EA00040818B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBFE36A61BDC1EA00040818B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBFE36A81BDC1EA00040818B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FBFE36A91BDC1EA00040818B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FBFE36AC1BDC1EA00040818B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBFE36AF1BDC1EA00040818B /* EstacionApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EstacionApp.xcdatamodel; sourceTree = "<group>"; };
+		FBFE36B11BDC1EA00040818B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBFE36B41BDC1EA00040818B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBFE36B61BDC1EA00040818B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBFE36BB1BDC1EA00040818B /* EstacionAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EstacionAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFE36BF1BDC1EA00040818B /* EstacionAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EstacionAppTests.m; sourceTree = "<group>"; };
+		FBFE36C11BDC1EA00040818B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBFE36C61BDC1EA00040818B /* EstacionAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EstacionAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFE36CA1BDC1EA00040818B /* EstacionAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EstacionAppUITests.m; sourceTree = "<group>"; };
+		FBFE36CC1BDC1EA00040818B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBFE36D81BDC20110040818B /* HistoricoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricoTableViewController.h; sourceTree = "<group>"; };
+		FBFE36D91BDC20110040818B /* HistoricoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricoTableViewController.m; sourceTree = "<group>"; };
+		FBFE36DC1BDC20110040818B /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		FBFE36DD1BDC20110040818B /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		FBFE36DE1BDC20110040818B /* MeusVeiculosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeusVeiculosTableViewController.h; sourceTree = "<group>"; };
+		FBFE36DF1BDC20110040818B /* MeusVeiculosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeusVeiculosTableViewController.m; sourceTree = "<group>"; };
+		FBFE36E01BDC20110040818B /* MinhaContaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinhaContaTableViewController.h; sourceTree = "<group>"; };
+		FBFE36E11BDC20110040818B /* MinhaContaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinhaContaTableViewController.m; sourceTree = "<group>"; };
+		FBFE36E21BDC20110040818B /* UtilizaVagaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilizaVagaViewController.h; sourceTree = "<group>"; };
+		FBFE36E31BDC20110040818B /* UtilizaVagaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilizaVagaViewController.m; sourceTree = "<group>"; };
+		FBFE36E41BDC20110040818B /* ViewControllerCadastraVeiculo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerCadastraVeiculo.h; sourceTree = "<group>"; };
+		FBFE36E51BDC20110040818B /* ViewControllerCadastraVeiculo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerCadastraVeiculo.m; sourceTree = "<group>"; };
+		FBFE36E61BDC20110040818B /* ViewControllerCadastro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerCadastro.h; sourceTree = "<group>"; };
+		FBFE36E71BDC20110040818B /* ViewControllerCadastro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerCadastro.m; sourceTree = "<group>"; };
+		FBFE36E81BDC20110040818B /* ViewControllerConfigura.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerConfigura.h; sourceTree = "<group>"; };
+		FBFE36E91BDC20110040818B /* ViewControllerConfigura.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerConfigura.m; sourceTree = "<group>"; };
+		FBFE36EA1BDC20110040818B /* ViewControllerEsqueceuSenha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerEsqueceuSenha.h; sourceTree = "<group>"; };
+		FBFE36EB1BDC20110040818B /* ViewControllerEsqueceuSenha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerEsqueceuSenha.m; sourceTree = "<group>"; };
+		FBFE36EC1BDC20110040818B /* ViewControllerHistorico.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerHistorico.h; sourceTree = "<group>"; };
+		FBFE36ED1BDC20110040818B /* ViewControllerHistorico.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerHistorico.m; sourceTree = "<group>"; };
+		FBFE36EE1BDC20110040818B /* ViewControllerLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerLogin.h; sourceTree = "<group>"; };
+		FBFE36EF1BDC20110040818B /* ViewControllerLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerLogin.m; sourceTree = "<group>"; };
+		FBFE36F01BDC20110040818B /* ViewControllerMeusVeiculos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerMeusVeiculos.h; sourceTree = "<group>"; };
+		FBFE36F11BDC20110040818B /* ViewControllerMeusVeiculos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMeusVeiculos.m; sourceTree = "<group>"; };
+		FBFE36F21BDC20110040818B /* ViewControllerMinhaConta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerMinhaConta.h; sourceTree = "<group>"; };
+		FBFE36F31BDC20110040818B /* ViewControllerMinhaConta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMinhaConta.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBFE369C1BDC1EA00040818B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD09FBD1BEA1BE000EABA9B /* CoreData.framework in Frameworks */,
+				FBADBF161BDC227600E5DFB3 /* MapKit.framework in Frameworks */,
+				FBADBF141BDC21DD00E5DFB3 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFE36B81BDC1EA00040818B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFE36C31BDC1EA00040818B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBFE36961BDC1EA00040818B = {
+			isa = PBXGroup;
+			children = (
+				FBD09FBC1BEA1BE000EABA9B /* CoreData.framework */,
+				FBADBF151BDC227600E5DFB3 /* MapKit.framework */,
+				FBADBF131BDC21DD00E5DFB3 /* CoreLocation.framework */,
+				FBFE36A11BDC1EA00040818B /* EstacionApp */,
+				FBFE36BE1BDC1EA00040818B /* EstacionAppTests */,
+				FBFE36C91BDC1EA00040818B /* EstacionAppUITests */,
+				FBFE36A01BDC1EA00040818B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBFE36A01BDC1EA00040818B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBFE369F1BDC1EA00040818B /* EstacionApp.app */,
+				FBFE36BB1BDC1EA00040818B /* EstacionAppTests.xctest */,
+				FBFE36C61BDC1EA00040818B /* EstacionAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBFE36A11BDC1EA00040818B /* EstacionApp */ = {
+			isa = PBXGroup;
+			children = (
+				FBFE36D81BDC20110040818B /* HistoricoTableViewController.h */,
+				FBFE36D91BDC20110040818B /* HistoricoTableViewController.m */,
+				FBFE36DC1BDC20110040818B /* MenuViewController.h */,
+				FBFE36DD1BDC20110040818B /* MenuViewController.m */,
+				FBFE36DE1BDC20110040818B /* MeusVeiculosTableViewController.h */,
+				FBFE36DF1BDC20110040818B /* MeusVeiculosTableViewController.m */,
+				FBFE36E01BDC20110040818B /* MinhaContaTableViewController.h */,
+				FBFE36E11BDC20110040818B /* MinhaContaTableViewController.m */,
+				FBFE36E21BDC20110040818B /* UtilizaVagaViewController.h */,
+				FBFE36E31BDC20110040818B /* UtilizaVagaViewController.m */,
+				FBFE36E41BDC20110040818B /* ViewControllerCadastraVeiculo.h */,
+				FBFE36E51BDC20110040818B /* ViewControllerCadastraVeiculo.m */,
+				FBFE36E61BDC20110040818B /* ViewControllerCadastro.h */,
+				FBFE36E71BDC20110040818B /* ViewControllerCadastro.m */,
+				FBFE36E81BDC20110040818B /* ViewControllerConfigura.h */,
+				FBFE36E91BDC20110040818B /* ViewControllerConfigura.m */,
+				FBFE36EA1BDC20110040818B /* ViewControllerEsqueceuSenha.h */,
+				FBFE36EB1BDC20110040818B /* ViewControllerEsqueceuSenha.m */,
+				FBFE36EC1BDC20110040818B /* ViewControllerHistorico.h */,
+				FBFE36ED1BDC20110040818B /* ViewControllerHistorico.m */,
+				FBFE36EE1BDC20110040818B /* ViewControllerLogin.h */,
+				FBFE36EF1BDC20110040818B /* ViewControllerLogin.m */,
+				FBFE36F01BDC20110040818B /* ViewControllerMeusVeiculos.h */,
+				FBFE36F11BDC20110040818B /* ViewControllerMeusVeiculos.m */,
+				FBFE36F21BDC20110040818B /* ViewControllerMinhaConta.h */,
+				FBFE36F31BDC20110040818B /* ViewControllerMinhaConta.m */,
+				FBFE36A51BDC1EA00040818B /* AppDelegate.h */,
+				FBFE36A61BDC1EA00040818B /* AppDelegate.m */,
+				FBFE36A81BDC1EA00040818B /* ViewController.h */,
+				FBFE36A91BDC1EA00040818B /* ViewController.m */,
+				FB83C8321BE8D64C006DD880 /* Xkiaa.png */,
+				FBFE36AB1BDC1EA00040818B /* Main.storyboard */,
+				FBD09FBE1BEA1C1700EABA9B /* Model.xcdatamodeld */,
+				FBD09FB61BEA180400EABA9B /* VeiculosTableViewController.h */,
+				FBD09FB71BEA180400EABA9B /* VeiculosTableViewController.m */,
+				FBD09FB91BEA186500EABA9B /* VeiculosViewController.h */,
+				FBD09FBA1BEA186500EABA9B /* VeiculosViewController.m */,
+				FBFE36B11BDC1EA00040818B /* Assets.xcassets */,
+				FBFE36B31BDC1EA00040818B /* LaunchScreen.storyboard */,
+				FBFE36B61BDC1EA00040818B /* Info.plist */,
+				FBFE36AE1BDC1EA00040818B /* EstacionApp.xcdatamodeld */,
+				FBFE36A21BDC1EA00040818B /* Supporting Files */,
+			);
+			path = EstacionApp;
+			sourceTree = "<group>";
+		};
+		FBFE36A21BDC1EA00040818B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBFE36A31BDC1EA00040818B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBFE36BE1BDC1EA00040818B /* EstacionAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBFE36BF1BDC1EA00040818B /* EstacionAppTests.m */,
+				FBFE36C11BDC1EA00040818B /* Info.plist */,
+			);
+			path = EstacionAppTests;
+			sourceTree = "<group>";
+		};
+		FBFE36C91BDC1EA00040818B /* EstacionAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBFE36CA1BDC1EA00040818B /* EstacionAppUITests.m */,
+				FBFE36CC1BDC1EA00040818B /* Info.plist */,
+			);
+			path = EstacionAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBFE369E1BDC1EA00040818B /* EstacionApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBFE36CF1BDC1EA00040818B /* Build configuration list for PBXNativeTarget "EstacionApp" */;
+			buildPhases = (
+				FBFE369B1BDC1EA00040818B /* Sources */,
+				FBFE369C1BDC1EA00040818B /* Frameworks */,
+				FBFE369D1BDC1EA00040818B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EstacionApp;
+			productName = EstacionApp;
+			productReference = FBFE369F1BDC1EA00040818B /* EstacionApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBFE36BA1BDC1EA00040818B /* EstacionAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBFE36D21BDC1EA00040818B /* Build configuration list for PBXNativeTarget "EstacionAppTests" */;
+			buildPhases = (
+				FBFE36B71BDC1EA00040818B /* Sources */,
+				FBFE36B81BDC1EA00040818B /* Frameworks */,
+				FBFE36B91BDC1EA00040818B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBFE36BD1BDC1EA00040818B /* PBXTargetDependency */,
+			);
+			name = EstacionAppTests;
+			productName = EstacionAppTests;
+			productReference = FBFE36BB1BDC1EA00040818B /* EstacionAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBFE36C51BDC1EA00040818B /* EstacionAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBFE36D51BDC1EA00040818B /* Build configuration list for PBXNativeTarget "EstacionAppUITests" */;
+			buildPhases = (
+				FBFE36C21BDC1EA00040818B /* Sources */,
+				FBFE36C31BDC1EA00040818B /* Frameworks */,
+				FBFE36C41BDC1EA00040818B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBFE36C81BDC1EA00040818B /* PBXTargetDependency */,
+			);
+			name = EstacionAppUITests;
+			productName = EstacionAppUITests;
+			productReference = FBFE36C61BDC1EA00040818B /* EstacionAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBFE36971BDC1EA00040818B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Thevelopers;
+				TargetAttributes = {
+					FBFE369E1BDC1EA00040818B = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 282NRSN99U;
+					};
+					FBFE36BA1BDC1EA00040818B = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 282NRSN99U;
+						TestTargetID = FBFE369E1BDC1EA00040818B;
+					};
+					FBFE36C51BDC1EA00040818B = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 282NRSN99U;
+						TestTargetID = FBFE369E1BDC1EA00040818B;
+					};
+				};
+			};
+			buildConfigurationList = FBFE369A1BDC1EA00040818B /* Build configuration list for PBXProject "EstacionApp" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBFE36961BDC1EA00040818B;
+			productRefGroup = FBFE36A01BDC1EA00040818B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBFE369E1BDC1EA00040818B /* EstacionApp */,
+				FBFE36BA1BDC1EA00040818B /* EstacionAppTests */,
+				FBFE36C51BDC1EA00040818B /* EstacionAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBFE369D1BDC1EA00040818B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFE36B51BDC1EA00040818B /* LaunchScreen.storyboard in Resources */,
+				FBFE36B21BDC1EA00040818B /* Assets.xcassets in Resources */,
+				FB83C8331BE8D64C006DD880 /* Xkiaa.png in Resources */,
+				FBFE36AD1BDC1EA00040818B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFE36B91BDC1EA00040818B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFE36C41BDC1EA00040818B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBFE369B1BDC1EA00040818B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD09FBB1BEA186500EABA9B /* VeiculosViewController.m in Sources */,
+				FBFE36F41BDC20110040818B /* HistoricoTableViewController.m in Sources */,
+				FBFE36AA1BDC1EA00040818B /* ViewController.m in Sources */,
+				FBFE36FE1BDC20110040818B /* ViewControllerHistorico.m in Sources */,
+				FBFE36F81BDC20110040818B /* MinhaContaTableViewController.m in Sources */,
+				FBFE36A71BDC1EA00040818B /* AppDelegate.m in Sources */,
+				FBFE36A41BDC1EA00040818B /* main.m in Sources */,
+				FBD09FC01BEA1C1700EABA9B /* Model.xcdatamodeld in Sources */,
+				FBFE36F61BDC20110040818B /* MenuViewController.m in Sources */,
+				FBFE36F91BDC20110040818B /* UtilizaVagaViewController.m in Sources */,
+				FBFE36FF1BDC20110040818B /* ViewControllerLogin.m in Sources */,
+				FBFE36FB1BDC20110040818B /* ViewControllerCadastro.m in Sources */,
+				FBFE36F71BDC20110040818B /* MeusVeiculosTableViewController.m in Sources */,
+				FBD09FB81BEA180400EABA9B /* VeiculosTableViewController.m in Sources */,
+				FBFE37001BDC20110040818B /* ViewControllerMeusVeiculos.m in Sources */,
+				FBFE36B01BDC1EA00040818B /* EstacionApp.xcdatamodeld in Sources */,
+				FBFE36FC1BDC20110040818B /* ViewControllerConfigura.m in Sources */,
+				FBFE36FD1BDC20110040818B /* ViewControllerEsqueceuSenha.m in Sources */,
+				FBFE37011BDC20110040818B /* ViewControllerMinhaConta.m in Sources */,
+				FBFE36FA1BDC20110040818B /* ViewControllerCadastraVeiculo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFE36B71BDC1EA00040818B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFE36C01BDC1EA00040818B /* EstacionAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFE36C21BDC1EA00040818B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFE36CB1BDC1EA00040818B /* EstacionAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBFE36BD1BDC1EA00040818B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBFE369E1BDC1EA00040818B /* EstacionApp */;
+			targetProxy = FBFE36BC1BDC1EA00040818B /* PBXContainerItemProxy */;
+		};
+		FBFE36C81BDC1EA00040818B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBFE369E1BDC1EA00040818B /* EstacionApp */;
+			targetProxy = FBFE36C71BDC1EA00040818B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBFE36AB1BDC1EA00040818B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBFE36AC1BDC1EA00040818B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBFE36B31BDC1EA00040818B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBFE36B41BDC1EA00040818B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBFE36CD1BDC1EA00040818B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FBFE36CE1BDC1EA00040818B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBFE36D01BDC1EA00040818B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EstacionApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EstacionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FBFE36D11BDC1EA00040818B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EstacionApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EstacionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FBFE36D31BDC1EA00040818B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EstacionAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Thevelopers.EstacionAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EstacionApp.app/EstacionApp";
+			};
+			name = Debug;
+		};
+		FBFE36D41BDC1EA00040818B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EstacionAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Thevelopers.EstacionAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EstacionApp.app/EstacionApp";
+			};
+			name = Release;
+		};
+		FBFE36D61BDC1EA00040818B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EstacionAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Thevelopers.EstacionAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EstacionApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FBFE36D71BDC1EA00040818B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EstacionAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Thevelopers.EstacionAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EstacionApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBFE369A1BDC1EA00040818B /* Build configuration list for PBXProject "EstacionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBFE36CD1BDC1EA00040818B /* Debug */,
+				FBFE36CE1BDC1EA00040818B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBFE36CF1BDC1EA00040818B /* Build configuration list for PBXNativeTarget "EstacionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBFE36D01BDC1EA00040818B /* Debug */,
+				FBFE36D11BDC1EA00040818B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBFE36D21BDC1EA00040818B /* Build configuration list for PBXNativeTarget "EstacionAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBFE36D31BDC1EA00040818B /* Debug */,
+				FBFE36D41BDC1EA00040818B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBFE36D51BDC1EA00040818B /* Build configuration list for PBXNativeTarget "EstacionAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBFE36D61BDC1EA00040818B /* Debug */,
+				FBFE36D71BDC1EA00040818B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FBD09FBE1BEA1C1700EABA9B /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FBD09FBF1BEA1C1700EABA9B /* Model.xcdatamodel */,
+			);
+			currentVersion = FBD09FBF1BEA1C1700EABA9B /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		FBFE36AE1BDC1EA00040818B /* EstacionApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FBFE36AF1BDC1EA00040818B /* EstacionApp.xcdatamodel */,
+			);
+			currentVersion = FBFE36AF1BDC1EA00040818B /* EstacionApp.xcdatamodel */;
+			path = EstacionApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FBFE36971BDC1EA00040818B /* Project object */;
+}
