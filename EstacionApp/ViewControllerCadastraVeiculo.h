@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+
 
 @interface ViewControllerCadastraVeiculo : UIViewController
 {
@@ -22,6 +24,8 @@
     
     
 }
+@property (strong) NSMutableArray *usuario;
+
 - (IBAction)btnCadastraVeiculo:(id)sender;
 
 

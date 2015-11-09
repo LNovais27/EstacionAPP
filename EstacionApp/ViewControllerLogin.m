@@ -78,7 +78,50 @@
 }
 */
 - (IBAction)btnEntrar:(id)sender {
-    if ([textEmail.text isEqual:@"Lucas"] && [textSenha.text isEqual:@"123"]) {
+    
+    
+    NSString *caminho = [NSString stringWithFormat:@"http://177.140.236.133:7024/Restful/usuario/logarUsuario/%@/%@",textEmail.text,textSenha.text];
+    
+    NSLog(caminho);
+    
+    NSURL *url = [NSURL URLWithString:caminho];
+    
+    //criando o NSData e fazendo um request
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    
+    //transformando o NSDATA para NSDICTIONARY, o NSJSONSerialization faz o Parser do JSON
+    NSError *error;
+    NSDictionary *json=[NSJSONSerialization JSONObjectWithData:data options:kNilOptions error: &error ];
+    
+    //caso precise isto vai exibir o conteÃºdo do dicionÃ¡rio e assim Ã© possÃvel identificar os nomes das chaves
+    NSLog(@"%@", json);
+    
+    //coletando os dados msg e status que retornaram das variaveis
+    NSString *nome = [json objectForKey:@"nome"];
+    if (nome != NULL) {
+        
+        NSString *nome = [json objectForKey:@"nome"];
+        NSString *email = [json objectForKey:@"email"];
+        NSString *senha = [json objectForKey:@"senha"];
+        NSString *idUsuario = [json objectForKey:@"idUsuario"];
+        
+        AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication]delegate];
+        
+        NSManagedObjectContext *context = [appDelegate managedObjectContext];
+        
+        
+        
+        NSManagedObject *Novocontato = [NSEntityDescription insertNewObjectForEntityForName:@"Usuario" inManagedObjectContext:context];
+        
+        [Novocontato setValue:nome forKey:@"nome"];
+        [Novocontato setValue:email forKey:@"email"];
+        [Novocontato setValue:senha forKey:@"senha"];
+        [Novocontato setValue:idUsuario forKey:@"idUsuario"];
+        NSError *error;
+        [context save:&error];
+        
+        
+        
         [self performSegueWithIdentifier:@"segueMenu" sender:sender];
         
     }

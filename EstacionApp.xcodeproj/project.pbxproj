@@ -13,7 +13,6 @@
 		FBD09FB81BEA180400EABA9B /* VeiculosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD09FB71BEA180400EABA9B /* VeiculosTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FBD09FBB1BEA186500EABA9B /* VeiculosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD09FBA1BEA186500EABA9B /* VeiculosViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FBD09FBD1BEA1BE000EABA9B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD09FBC1BEA1BE000EABA9B /* CoreData.framework */; };
-		FBD09FC01BEA1C1700EABA9B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBD09FBE1BEA1C1700EABA9B /* Model.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
 		FBFE36A41BDC1EA00040818B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36A31BDC1EA00040818B /* main.m */; };
 		FBFE36A71BDC1EA00040818B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36A61BDC1EA00040818B /* AppDelegate.m */; };
 		FBFE36AA1BDC1EA00040818B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36A91BDC1EA00040818B /* ViewController.m */; };
@@ -34,7 +33,6 @@
 		FBFE36FD1BDC20110040818B /* ViewControllerEsqueceuSenha.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36EB1BDC20110040818B /* ViewControllerEsqueceuSenha.m */; settings = {ASSET_TAGS = (); }; };
 		FBFE36FE1BDC20110040818B /* ViewControllerHistorico.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36ED1BDC20110040818B /* ViewControllerHistorico.m */; settings = {ASSET_TAGS = (); }; };
 		FBFE36FF1BDC20110040818B /* ViewControllerLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36EF1BDC20110040818B /* ViewControllerLogin.m */; settings = {ASSET_TAGS = (); }; };
-		FBFE37001BDC20110040818B /* ViewControllerMeusVeiculos.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36F11BDC20110040818B /* ViewControllerMeusVeiculos.m */; settings = {ASSET_TAGS = (); }; };
 		FBFE37011BDC20110040818B /* ViewControllerMinhaConta.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36F31BDC20110040818B /* ViewControllerMinhaConta.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -64,7 +62,6 @@
 		FBD09FB91BEA186500EABA9B /* VeiculosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeiculosViewController.h; sourceTree = "<group>"; };
 		FBD09FBA1BEA186500EABA9B /* VeiculosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeiculosViewController.m; sourceTree = "<group>"; };
 		FBD09FBC1BEA1BE000EABA9B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		FBD09FBF1BEA1C1700EABA9B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FBFE369F1BDC1EA00040818B /* EstacionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EstacionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFE36A31BDC1EA00040818B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FBFE36A51BDC1EA00040818B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,8 +101,6 @@
 		FBFE36ED1BDC20110040818B /* ViewControllerHistorico.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerHistorico.m; sourceTree = "<group>"; };
 		FBFE36EE1BDC20110040818B /* ViewControllerLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerLogin.h; sourceTree = "<group>"; };
 		FBFE36EF1BDC20110040818B /* ViewControllerLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerLogin.m; sourceTree = "<group>"; };
-		FBFE36F01BDC20110040818B /* ViewControllerMeusVeiculos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerMeusVeiculos.h; sourceTree = "<group>"; };
-		FBFE36F11BDC20110040818B /* ViewControllerMeusVeiculos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMeusVeiculos.m; sourceTree = "<group>"; };
 		FBFE36F21BDC20110040818B /* ViewControllerMinhaConta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerMinhaConta.h; sourceTree = "<group>"; };
 		FBFE36F31BDC20110040818B /* ViewControllerMinhaConta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMinhaConta.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,8 +181,6 @@
 				FBFE36ED1BDC20110040818B /* ViewControllerHistorico.m */,
 				FBFE36EE1BDC20110040818B /* ViewControllerLogin.h */,
 				FBFE36EF1BDC20110040818B /* ViewControllerLogin.m */,
-				FBFE36F01BDC20110040818B /* ViewControllerMeusVeiculos.h */,
-				FBFE36F11BDC20110040818B /* ViewControllerMeusVeiculos.m */,
 				FBFE36F21BDC20110040818B /* ViewControllerMinhaConta.h */,
 				FBFE36F31BDC20110040818B /* ViewControllerMinhaConta.m */,
 				FBFE36A51BDC1EA00040818B /* AppDelegate.h */,
@@ -196,7 +189,6 @@
 				FBFE36A91BDC1EA00040818B /* ViewController.m */,
 				FB83C8321BE8D64C006DD880 /* Xkiaa.png */,
 				FBFE36AB1BDC1EA00040818B /* Main.storyboard */,
-				FBD09FBE1BEA1C1700EABA9B /* Model.xcdatamodeld */,
 				FBD09FB61BEA180400EABA9B /* VeiculosTableViewController.h */,
 				FBD09FB71BEA180400EABA9B /* VeiculosTableViewController.m */,
 				FBD09FB91BEA186500EABA9B /* VeiculosViewController.h */,
@@ -377,14 +369,12 @@
 				FBFE36F81BDC20110040818B /* MinhaContaTableViewController.m in Sources */,
 				FBFE36A71BDC1EA00040818B /* AppDelegate.m in Sources */,
 				FBFE36A41BDC1EA00040818B /* main.m in Sources */,
-				FBD09FC01BEA1C1700EABA9B /* Model.xcdatamodeld in Sources */,
 				FBFE36F61BDC20110040818B /* MenuViewController.m in Sources */,
 				FBFE36F91BDC20110040818B /* UtilizaVagaViewController.m in Sources */,
 				FBFE36FF1BDC20110040818B /* ViewControllerLogin.m in Sources */,
 				FBFE36FB1BDC20110040818B /* ViewControllerCadastro.m in Sources */,
 				FBFE36F71BDC20110040818B /* MeusVeiculosTableViewController.m in Sources */,
 				FBD09FB81BEA180400EABA9B /* VeiculosTableViewController.m in Sources */,
-				FBFE37001BDC20110040818B /* ViewControllerMeusVeiculos.m in Sources */,
 				FBFE36B01BDC1EA00040818B /* EstacionApp.xcdatamodeld in Sources */,
 				FBFE36FC1BDC20110040818B /* ViewControllerConfigura.m in Sources */,
 				FBFE36FD1BDC20110040818B /* ViewControllerEsqueceuSenha.m in Sources */,
@@ -638,16 +628,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FBD09FBE1BEA1C1700EABA9B /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FBD09FBF1BEA1C1700EABA9B /* Model.xcdatamodel */,
-			);
-			currentVersion = FBD09FBF1BEA1C1700EABA9B /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		FBFE36AE1BDC1EA00040818B /* EstacionApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

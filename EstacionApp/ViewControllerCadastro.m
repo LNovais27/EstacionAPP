@@ -7,7 +7,7 @@
 //
 
 #import "ViewControllerCadastro.h"
-#import "VMaskTextField.h"
+
 
 @interface ViewControllerCadastro()
 
@@ -16,19 +16,21 @@
 
 @implementation ViewControllerCadastro
 
+NSString *sexo = @"";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
 /*    self.maskTextFieldDataNasc.mask = @"##/##/####";
     self.maskTextFieldCpf.mask = @"###.###.###-##";
     self.maskTextFieldCelular.mask = @"(##)#####-####"; */
-    
     labelCadastro.text = @"CADASTRO";
     labelNome.text = @"";
     labelSexo.text = @"Sexo: ";
     labelSobrenome.text = @"";
     labelEmail.text = @"";
     labelSenha.text = @"";
+    labelConfirmarSenha.text = @"";
     labelCpf.text = @"";
     labelCnh.text = @"";
     labelDataNasc.text = @"";
@@ -36,6 +38,7 @@
     
     // Do any additional setup after loading the view.
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -52,105 +55,89 @@
 }
 */
 
-- (IBAction)btnCadastrar:(id)sender {
+- (IBAction)btnGravar:(id)sender {
+    
     if([textNome.text isEqual: @""]){
-       labelNome.text = @"Digite o Nome";
-    }
+        labelNome.text = @"Digite o Nome";
+    }else{
     if([textSobrenome.text isEqual: @""]){
         labelSobrenome.text = @"Digite o Sobrenome";
     }
     if([textEmail.text isEqual: @""]){
         labelEmail.text = @"Digite o E-mail";
-    }
+    }else{
     if([textSenha.text isEqual: @""]){
         labelSenha.text = @"Digite a Senha";
-    }
+    }else{
+        if(![textSenha.text isEqualToString: textConfirmarSenha.text]){
+            labelConfirmarSenha.text = @"Senha incorreta";
+        }
+    else{
     if([textCpf.text isEqual: @""]){
         labelCpf.text = @"Digite o CPF";
     }
     if([textCnh.text isEqual: @""]){
         labelCnh.text = @"Digite o numero da CNH";
-    }
-    if([textDataNasc.text isEqual: @""]){
+    }else{
+    if([textDataDia.text isEqual: @""] || [textDataMes.text isEqual: @""] || [textDataAno.text isEqual: @""] ){
         labelDataNasc.text = @"Digite a Data de Nascimento";
-    }
+    }else{
     if([textCelular.text isEqual: @""]){
         labelCelular.text = @"Digite o Numero do Celular";
     }
-}
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    VMaskTextField * maskTextField = (VMaskTextField*) textField;
-    return  [maskTextField shouldChangeCharactersInRange:range replacementString:string];
-}
-
-- (IBAction)btnGravar:(id)sender {
+    else{
+        NSString *sexo = @"0";
+        if (txtSexo.selectedSegmentIndex == 1) {
+            NSString *sexo = @"1";
+        }
+        NSString *dataNasc = [NSString stringWithFormat:@"%@-%@-%@", textDataAno.text, textDataMes.text, textDataDia.text];
+        
+    NSString *caminho = [NSString stringWithFormat:@"http://177.140.236.133:7024/Restful/usuario/cadastrarUsuario/%@/%@/%@/%@/%@/%@/%@/%@/%@",textNome.text,
+             textSobrenome.text,
+             textEmail.text,
+             textCpf.text,
+             textCnh.text,
+             dataNasc,
+             textCelular.text,
+             sexo,
+             textSenha.text];
+        NSLog(caminho);
     
-    NSString *stringUrl = @"http://177.140.236.133:7024/Restful/usuario/listarTodos";
+    NSURL *url = [NSURL URLWithString:caminho];
     
-    //transformando a string em URL
-    NSURL *url = [NSURL URLWithString:stringUrl];
+    //criando o NSData e fazendo um request
+    NSData *data = [NSData dataWithContentsOfURL:url];
     
-    //Criando uma requisição com a URL informada
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    
-    //Definindo method como post
-    [request setHTTPMethod:@"POST"];
-    
-    //setando o tipo de conteudo com JSON
-    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    
-    //setando uma chave para acesso aos dados.
-    //[request setValue:@"TheVelopers" forHTTPHeaderField:@"chave-api"];
-    NSMutableDictionary *body = [[NSMutableDictionary alloc]init];
-    [body setValue:textNome.text forKey: @"nome"];
-    [body setValue:textSobrenome.text forKey: @"sobrenome"];
-    [body setValue:textEmail.text forKey: @"smail"];
-    [body setValue:textSenha.text forKey: @"senha"];
-    [body setValue:textCpf.text forKey: @"cpf"];
-    [body setValue:textCnh.text forKey: @"ch"];
-    [body setValue:textDataNasc.text forKey: @"dataNasc"];
-    [body setValue:textCelular.text forKey: @"celular"];
-    
-    //Serializa o Dictionary para Data
+    //transformando o NSDATA para NSDICTIONARY, o NSJSONSerialization faz o Parser do JSON
     NSError *error;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:body options:NSJSONWritingPrettyPrinted error:&error];
+    NSDictionary *json=[NSJSONSerialization JSONObjectWithData:data options:kNilOptions error: &error ];
     
-    //Converte Data em String para impressao do JSON no Log
-    NSString *string = [[NSString alloc] initWithData: jsonData encoding: NSUTF8StringEncoding];
-    //Impreime JSON no Log
-    NSLog(@"Testando os dados que irão subir %@ ", string);
-    
-    //Adiciona o Data no body da requisição
-    [request setHTTPBody: jsonData];
-    
-    NSURLResponse *resposta;
-    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse: &resposta error:&error];
-    
-    //Transforma NSDATA para NSDictionary o NSJSONSerialization faz o parser do JSON
-    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-    
-    NSLog(@"Exibindo os dados que retornaram da gravação %@ ", json);
+    //caso precise isto vai exibir o conteÃºdo do dicionÃ¡rio e assim Ã© possÃvel identificar os nomes das chaves
+     NSLog(@"%@", json);
     
     //coletando os dados msg e status que retornaram das variaveis
-    NSString *msg = [json objectForKey:@"mensagem"];
-    int status = [[json objectForKey:@"status"]intValue];
+    NSString *msg = [json objectForKey:@"nome"];
+    
     
     UIAlertView *alerta = [[UIAlertView alloc] initWithTitle:@"Usuário cadastrado com sucesso" message:msg delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
     
     [alerta show];
     
     //Limpando a tela caso a gravação tenha ocorrido com sucesso
-    if (status == 1){
-        textNome.text=@"";
-        textSobrenome.text=@"";
-        textEmail.text=@"";
-        textSenha.text=@"";
-        textCpf.text=@"";
-        textCnh.text=@"";
-        textDataNasc.text=@"";
-        textCelular.text=@"";
+    if (msg != NULL ){
+        
+        textNome.text = @"";
+        textSobrenome.text = @"";
+        textEmail.text = @"";
+        textSenha.text = @"";
+        textConfirmarSenha.text = @"";
+        textCpf.text = @"";
+        textCnh.text = @"";
+        textDataDia.text = @"";
+        textDataMes.text = @"";
+        textDataAno.text = @"";
+        textCelular.text = @"";
     }
-    
-    
+    }}}}}}}
 }
 @end

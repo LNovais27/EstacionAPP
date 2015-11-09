@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 @interface ViewControllerLogin : UIViewController{
     
@@ -19,6 +20,9 @@
     __weak IBOutlet UILabel *labelTesteLogin;
     
 }
+
+@property (strong) NSManagedObject *usuario;
+
 - (IBAction)btnEntrar:(id)sender;
 
 

@@ -7,12 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+
 
 @interface MeusVeiculosTableViewController : UITableViewController{
     
     NSMutableArray *jsonArray;
     NSMutableDictionary *meuDicionario;
+    NSMutableArray *modeloArray;
+    NSMutableArray *placaArray;
+    NSMutableArray *apelidoArray;
     
 }
+
+@property (strong) NSMutableArray *usuario;
 
 @end
