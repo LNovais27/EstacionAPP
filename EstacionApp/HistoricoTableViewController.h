@@ -7,12 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 @interface HistoricoTableViewController : UITableViewController{
     
     NSMutableArray *jsonArray;
     NSMutableDictionary *meuDicionario;
+    NSArray *logs;
     
 }
+
+@property (strong) NSMutableArray *usuario;
+
+
 
 @end

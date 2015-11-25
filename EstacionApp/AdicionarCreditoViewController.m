@@ -1,18 +1,18 @@
 //
-//  ViewControllerMinhaConta.m
-//  EstacionAPP
+//  AdicionarCreditoViewController.m
+//  EstacionApp
 //
-//  Created by TIMATRIZ on 13/09/15.
-//  Copyright (c) 2015 Thevelopers. All rights reserved.
+//  Created by TIMATRIZ on 16/11/15.
+//  Copyright © 2015 Thevelopers. All rights reserved.
 //
 
-#import "ViewControllerMinhaConta.h"
+#import "AdicionarCreditoViewController.h"
 
-@interface ViewControllerMinhaConta ()
+@interface AdicionarCreditoViewController ()
 
 @end
 
-@implementation ViewControllerMinhaConta
+@implementation AdicionarCreditoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,9 +33,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-- (IBAction)btnMenu:(id)sender {
-    [self.navigationController popViewControllerAnimated: YES];
-
-}
 
 @end

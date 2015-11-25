@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewControllerEsqueceuSenha : UIViewController{
+#import <UIKit/UIKit.h>
 
+@interface ViewControllerEsqueceuSenha : UIViewController{
+    
     __weak IBOutlet UILabel *labelDigiteDados;
     __weak IBOutlet UITextField *textEmail;
     __weak IBOutlet UITextField *textCPF;

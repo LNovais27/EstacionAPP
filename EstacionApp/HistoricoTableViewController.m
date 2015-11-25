@@ -14,114 +14,54 @@
 
 @implementation HistoricoTableViewController
 
+@synthesize usuario;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
- /*   NSString *stringUrl = @"";
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background APP.jpg"]];
+
     
-    NSURL *url = [NSURL URLWithString:stringUrl];
+    AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication]delegate];
     
-    NSError *error;
-    //Criando uma requisição com a url informada
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    //Definindo o método como Post
-    [request setHTTPMethod:@"POST"];
-    //setando o tipo de conteúdo com json
-    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    //setando uma chave para acesso aos dados
-    [request setValue:@"1234567890" forHTTPHeaderField:@"chave-api"];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
     
-    NSMutableDictionary *body = [[NSMutableDictionary alloc] init];
-    //setar com seu rm para listar apenas os parques que vc cadastrou
-    [body setValue:@"12777" forKey:@"rm"];
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Usuario"];
     
-    //Serializa o Dictionary para Data
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:body
-                                                       options:NSJSONWritingPrettyPrinted
-                                                         error:&error];
+    usuario = [[context executeFetchRequest:request error:nil]mutableCopy];
     
-    //Converte Data em String para impressao do JSON no Log
-    NSString *string = [[NSString alloc] initWithData:jsonData
-                                             encoding:NSUTF8StringEncoding];
-    //Imprime JSON no Log.
-    NSLog(@"Exibindo a String do Json para Teste, veja as informações que irão subir %@", string);
+    NSManagedObject * contat=[usuario objectAtIndex:[usuario count]-1];
     
-    //Adiciona o Data no Body(Corpo) da requisição
-    [request setHTTPBody:jsonData];
+    NSString *id = [NSString stringWithFormat:@"%@", [contat valueForKey:@"idUsuario"]];
     
-    NSURLResponse *resposta;
+    //ALTERAR
+    NSString *caminho = [NSString stringWithFormat:@"http://177.140.236.133:7024/Restful/usuario/consultarHistorico/%@",id];
+    
+    NSLog(caminho);
+    
+    NSURL *url = [NSURL URLWithString:caminho];
+    
     //criando o NSData e fazendo um request
-    NSData *data = [NSURLConnection sendSynchronousRequest:request
-                                         returningResponse:&resposta
-                                                     error:&error];
+    NSData *data = [NSData dataWithContentsOfURL:url];
     
-    //transformando o NSDATA para NSDICTIONARy o NSJSONSerialization faz o Parser do JSON
-    jsonArray = [NSJSONSerialization JSONObjectWithData:data
-                                                options:kNilOptions
-                                                  error:&error];
-    //testes
-    NSLog(@"Exibindo o Array para Teste %@", jsonArray);
-    meuDicionario = [jsonArray objectAtIndex:0];//passando para o dicionario o item 0 do array
-    NSLog(@"Nome do parque para teste - índice 0 %@", [meuDicionario objectForKey:@"nome"]);
-    [self.tableView reloadData];
+    //transformando o NSDATA para NSDICTIONARY, o NSJSONSerialization faz o Parser do JSON
+    NSError *error;
+    NSDictionary *json=[NSJSONSerialization JSONObjectWithData:data options:kNilOptions error: &error ];
     
-    /*
-     //alterar WebService
-     NSString *stringCep = @"http://scarponi.com/webservices/listar.php";
-     
-     //transformando a string em URL
-     NSURL *url = [NSURL URLWithString:stringCep];
-     
-     
-     NSError *error;
-     //Criando a requisição com a URL informada
-     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: url];
-     //Definindo method como Post
-     [request setHTTPMethod:@"@POST"];
-     //setando o tipo de conteudo com json
-     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-     //setando uma chave para acesso ALTERAR SENHA!
-     [request setValue:@"1234567890" forHTTPHeaderField:@"chave-api"];
-     
-     NSMutableDictionary *body = [[NSMutableDictionary alloc]init];
-     //setar usuario para listar conteudo ALTERAR USUARIO
-     [body setValue:@"12777" forKey:@"rm"];
-     
-     //Serializa o Dictionary para Data
-     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:body options:NSJSONWritingPrettyPrinted error:&error];
-     
-     //Converte Data em String para impressao do JSON no Log
-     NSString *string = [[NSString alloc] initWithData: jsonData encoding: NSUTF8StringEncoding];
-     //Impreime JSON no Log
-     NSLog(@"Testando os dados que irão subir %@ ", string);
-     
-     //Adiciona o Data no body da requisição
-     [request setHTTPBody: jsonData];
-     
-     NSURLResponse *resposta;
-     NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse: &resposta error:&error];
-     
-     //Transforma NSDATA para NSDictionary o NSJSONSerialization faz o parser do JSON
-     jsonArray = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-     
-     NSLog(@"%@", jsonArray);//exibe Array
-     meuDicionario = [jsonArray objectAtIndex:1];//passa pro Dicionario o item 0 do array ALTERAR NOME
-     NSLog(@"%@", [meuDicionario objectForKey:@"nome"]);
-     
-     */
+    //caso precise isto vai exibir o conteÃºdo do dicionÃ¡rio e assim Ã© possÃvel identificar os nomes das chaves
+    NSLog(@"Json %@", json);
     
+    NSArray *wrapper= [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
     
+    logs = [json valueForKey:@"log"];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    NSLog(@" criou o array de logs ");
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 #pragma mark - Table view data source
@@ -133,7 +73,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     //#warning Incomplete implementation, return the number of rows
-    return [jsonArray count];
+    return logs.count -1;
 }
 
 
@@ -141,10 +81,22 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseidentifier" forIndexPath:indexPath];
     
     // Configure the cell...
-    meuDicionario = [jsonArray objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = @"";
-    cell.detailTextLabel.text = [meuDicionario objectForKey:@"estado"];
+    NSDictionary *log = logs[indexPath.row];
+    
+    NSString * descricao = [log objectForKey:@"descricao"];
+    if([descricao  isEqual: @"Utilização do zona azul"]){
+        
+        
+        cell.textLabel.text = [log objectForKey:@"placa"];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@",[log objectForKey:@"descricao"],[log objectForKey:@"data"]];
+
+    }else{
+    
+        cell.textLabel.text = [log objectForKey:@"descricao"];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@",[log objectForKey:@"valorRecarga"],[log objectForKey:@"data"]];
+    
+}
     return cell;
 }
 

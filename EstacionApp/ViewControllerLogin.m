@@ -17,21 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    labelEstacionAPP.text = @"EstacionAPP";
-    labelTesteLogin.text = @"Teste Login";
-    
-    [textEmail setDelegate:self];
-    [textSenha setDelegate:self];
-    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background APP.jpg"]];
 
-    
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
                                    action:@selector(dismissKeyboard)];
     
     [self.view addGestureRecognizer:tap];
-
+    
     
     // Do any additional setup after loading the view.
 }
@@ -55,28 +49,28 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 
 
 /*    if ([textEmail.text isEqual:@"Lucas"] && [textSenha.text isEqual:@"123"]) {
-
-    [self.navigationController popViewControllerAnimated: YES];
-        
-    }
-    else{
-        labelTesteLogin.text = @"Login ou senha errado";
-    }
-    
-}
-*/
+ 
+ [self.navigationController popViewControllerAnimated: YES];
+ 
+ }
+ else{
+ labelTesteLogin.text = @"Login ou senha errado";
+ }
+ 
+ }
+ */
 - (IBAction)btnEntrar:(id)sender {
     
     
@@ -126,7 +120,14 @@
         
     }
     else{
-        labelTesteLogin.text = @"Login ou senha errado";
+        
+        UIAlertView *alerta = [[UIAlertView alloc] initWithTitle:@"Email ou senha errado" message:@"ERRO" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        
+        [alerta show];
+        
+        textEmail.text = @"";
+        textSenha.text = @"";
+        
     }
     
 }

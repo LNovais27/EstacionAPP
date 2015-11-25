@@ -11,17 +11,14 @@
 
 @interface ViewControllerLogin : UIViewController{
     
-    __weak IBOutlet UILabel *labelEstacionAPP;
-    
     __weak IBOutlet UITextField *textEmail;
-
-    __weak IBOutlet UITextField *textSenha;
     
-    __weak IBOutlet UILabel *labelTesteLogin;
+    __weak IBOutlet UITextField *textSenha;
     
 }
 
 @property (strong) NSManagedObject *usuario;
+@property (strong) NSMutableArray *usuarios;
 
 - (IBAction)btnEntrar:(id)sender;
 

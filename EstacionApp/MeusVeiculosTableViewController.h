@@ -13,10 +13,10 @@
 @interface MeusVeiculosTableViewController : UITableViewController{
     
     NSMutableArray *jsonArray;
-    NSMutableDictionary *meuDicionario;
-    NSMutableArray *modeloArray;
-    NSMutableArray *placaArray;
-    NSMutableArray *apelidoArray;
+    NSMutableArray *veiculosTable;
+    NSMutableArray *celulas;
+    NSArray *veiculos;
+    NSDictionary *json;
     
 }
 

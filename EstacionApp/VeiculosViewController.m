@@ -28,7 +28,7 @@
     [Novoveiculo setValue:txtCarro.text forKey:@"carro"];
     [Novoveiculo setValue:txtPlaca.text forKey:@"placa"];
     [Novoveiculo setValue:txtApelido.text forKey:@"apelido"];
-     NSError *error;
+    NSError *error;
     [context save:&error];
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -36,6 +36,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background APP.jpg"]];
+
     // Do any additional setup after loading the view.
 }
 
@@ -45,13 +48,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

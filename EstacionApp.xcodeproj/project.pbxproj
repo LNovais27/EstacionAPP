@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB2CE24F1C03948A00D8862B /* AddCreditosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2CE24E1C03948A00D8862B /* AddCreditosViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FB2CE2521C0394E200D8862B /* MinhaContaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2CE2511C0394E200D8862B /* MinhaContaViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FB718DE71C025246000ABAB9 /* Background APP.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB718DE51C025246000ABAB9 /* Background APP.jpg */; settings = {ASSET_TAGS = (); }; };
+		FB718DE81C025246000ABAB9 /* button white.png in Resources */ = {isa = PBXBuildFile; fileRef = FB718DE61C025246000ABAB9 /* button white.png */; settings = {ASSET_TAGS = (); }; };
 		FB83C8331BE8D64C006DD880 /* Xkiaa.png in Resources */ = {isa = PBXBuildFile; fileRef = FB83C8321BE8D64C006DD880 /* Xkiaa.png */; settings = {ASSET_TAGS = (); }; };
 		FBADBF141BDC21DD00E5DFB3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBADBF131BDC21DD00E5DFB3 /* CoreLocation.framework */; };
 		FBADBF161BDC227600E5DFB3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBADBF151BDC227600E5DFB3 /* MapKit.framework */; };
+		FBCA801F1C06209300B9B29D /* Logo3.png in Resources */ = {isa = PBXBuildFile; fileRef = FBCA801E1C06209300B9B29D /* Logo3.png */; settings = {ASSET_TAGS = (); }; };
 		FBD09FB81BEA180400EABA9B /* VeiculosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD09FB71BEA180400EABA9B /* VeiculosTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FBD09FBB1BEA186500EABA9B /* VeiculosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD09FBA1BEA186500EABA9B /* VeiculosViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FBD09FBD1BEA1BE000EABA9B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD09FBC1BEA1BE000EABA9B /* CoreData.framework */; };
@@ -25,15 +30,12 @@
 		FBFE36F41BDC20110040818B /* HistoricoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36D91BDC20110040818B /* HistoricoTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FBFE36F61BDC20110040818B /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36DD1BDC20110040818B /* MenuViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FBFE36F71BDC20110040818B /* MeusVeiculosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36DF1BDC20110040818B /* MeusVeiculosTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		FBFE36F81BDC20110040818B /* MinhaContaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36E11BDC20110040818B /* MinhaContaTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FBFE36F91BDC20110040818B /* UtilizaVagaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36E31BDC20110040818B /* UtilizaVagaViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FBFE36FA1BDC20110040818B /* ViewControllerCadastraVeiculo.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36E51BDC20110040818B /* ViewControllerCadastraVeiculo.m */; settings = {ASSET_TAGS = (); }; };
 		FBFE36FB1BDC20110040818B /* ViewControllerCadastro.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36E71BDC20110040818B /* ViewControllerCadastro.m */; settings = {ASSET_TAGS = (); }; };
 		FBFE36FC1BDC20110040818B /* ViewControllerConfigura.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36E91BDC20110040818B /* ViewControllerConfigura.m */; settings = {ASSET_TAGS = (); }; };
 		FBFE36FD1BDC20110040818B /* ViewControllerEsqueceuSenha.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36EB1BDC20110040818B /* ViewControllerEsqueceuSenha.m */; settings = {ASSET_TAGS = (); }; };
-		FBFE36FE1BDC20110040818B /* ViewControllerHistorico.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36ED1BDC20110040818B /* ViewControllerHistorico.m */; settings = {ASSET_TAGS = (); }; };
 		FBFE36FF1BDC20110040818B /* ViewControllerLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36EF1BDC20110040818B /* ViewControllerLogin.m */; settings = {ASSET_TAGS = (); }; };
-		FBFE37011BDC20110040818B /* ViewControllerMinhaConta.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFE36F31BDC20110040818B /* ViewControllerMinhaConta.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +56,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB2CE24D1C03948A00D8862B /* AddCreditosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCreditosViewController.h; path = ../AddCreditosViewController.h; sourceTree = "<group>"; };
+		FB2CE24E1C03948A00D8862B /* AddCreditosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddCreditosViewController.m; path = ../AddCreditosViewController.m; sourceTree = "<group>"; };
+		FB2CE2501C0394E200D8862B /* MinhaContaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MinhaContaViewController.h; path = ../MinhaContaViewController.h; sourceTree = "<group>"; };
+		FB2CE2511C0394E200D8862B /* MinhaContaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MinhaContaViewController.m; path = ../MinhaContaViewController.m; sourceTree = "<group>"; };
+		FB718DE51C025246000ABAB9 /* Background APP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Background APP.jpg"; path = "Assets.xcassets/Background APP.jpg"; sourceTree = "<group>"; };
+		FB718DE61C025246000ABAB9 /* button white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button white.png"; path = "Assets.xcassets/button white.png"; sourceTree = "<group>"; };
 		FB83C8321BE8D64C006DD880 /* Xkiaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Xkiaa.png; path = Assets.xcassets/Xkiaa.png; sourceTree = "<group>"; };
 		FBADBF131BDC21DD00E5DFB3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FBADBF151BDC227600E5DFB3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FBCA801E1C06209300B9B29D /* Logo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo3.png; path = Assets.xcassets/Logo3.png; sourceTree = "<group>"; };
 		FBD09FB61BEA180400EABA9B /* VeiculosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeiculosTableViewController.h; sourceTree = "<group>"; };
 		FBD09FB71BEA180400EABA9B /* VeiculosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeiculosTableViewController.m; sourceTree = "<group>"; };
 		FBD09FB91BEA186500EABA9B /* VeiculosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeiculosViewController.h; sourceTree = "<group>"; };
@@ -85,8 +94,6 @@
 		FBFE36DD1BDC20110040818B /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		FBFE36DE1BDC20110040818B /* MeusVeiculosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeusVeiculosTableViewController.h; sourceTree = "<group>"; };
 		FBFE36DF1BDC20110040818B /* MeusVeiculosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeusVeiculosTableViewController.m; sourceTree = "<group>"; };
-		FBFE36E01BDC20110040818B /* MinhaContaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinhaContaTableViewController.h; sourceTree = "<group>"; };
-		FBFE36E11BDC20110040818B /* MinhaContaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinhaContaTableViewController.m; sourceTree = "<group>"; };
 		FBFE36E21BDC20110040818B /* UtilizaVagaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilizaVagaViewController.h; sourceTree = "<group>"; };
 		FBFE36E31BDC20110040818B /* UtilizaVagaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilizaVagaViewController.m; sourceTree = "<group>"; };
 		FBFE36E41BDC20110040818B /* ViewControllerCadastraVeiculo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerCadastraVeiculo.h; sourceTree = "<group>"; };
@@ -97,12 +104,8 @@
 		FBFE36E91BDC20110040818B /* ViewControllerConfigura.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerConfigura.m; sourceTree = "<group>"; };
 		FBFE36EA1BDC20110040818B /* ViewControllerEsqueceuSenha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerEsqueceuSenha.h; sourceTree = "<group>"; };
 		FBFE36EB1BDC20110040818B /* ViewControllerEsqueceuSenha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerEsqueceuSenha.m; sourceTree = "<group>"; };
-		FBFE36EC1BDC20110040818B /* ViewControllerHistorico.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerHistorico.h; sourceTree = "<group>"; };
-		FBFE36ED1BDC20110040818B /* ViewControllerHistorico.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerHistorico.m; sourceTree = "<group>"; };
 		FBFE36EE1BDC20110040818B /* ViewControllerLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerLogin.h; sourceTree = "<group>"; };
 		FBFE36EF1BDC20110040818B /* ViewControllerLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerLogin.m; sourceTree = "<group>"; };
-		FBFE36F21BDC20110040818B /* ViewControllerMinhaConta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerMinhaConta.h; sourceTree = "<group>"; };
-		FBFE36F31BDC20110040818B /* ViewControllerMinhaConta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMinhaConta.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,8 +168,6 @@
 				FBFE36DD1BDC20110040818B /* MenuViewController.m */,
 				FBFE36DE1BDC20110040818B /* MeusVeiculosTableViewController.h */,
 				FBFE36DF1BDC20110040818B /* MeusVeiculosTableViewController.m */,
-				FBFE36E01BDC20110040818B /* MinhaContaTableViewController.h */,
-				FBFE36E11BDC20110040818B /* MinhaContaTableViewController.m */,
 				FBFE36E21BDC20110040818B /* UtilizaVagaViewController.h */,
 				FBFE36E31BDC20110040818B /* UtilizaVagaViewController.m */,
 				FBFE36E41BDC20110040818B /* ViewControllerCadastraVeiculo.h */,
@@ -177,18 +178,17 @@
 				FBFE36E91BDC20110040818B /* ViewControllerConfigura.m */,
 				FBFE36EA1BDC20110040818B /* ViewControllerEsqueceuSenha.h */,
 				FBFE36EB1BDC20110040818B /* ViewControllerEsqueceuSenha.m */,
-				FBFE36EC1BDC20110040818B /* ViewControllerHistorico.h */,
-				FBFE36ED1BDC20110040818B /* ViewControllerHistorico.m */,
 				FBFE36EE1BDC20110040818B /* ViewControllerLogin.h */,
 				FBFE36EF1BDC20110040818B /* ViewControllerLogin.m */,
-				FBFE36F21BDC20110040818B /* ViewControllerMinhaConta.h */,
-				FBFE36F31BDC20110040818B /* ViewControllerMinhaConta.m */,
 				FBFE36A51BDC1EA00040818B /* AppDelegate.h */,
 				FBFE36A61BDC1EA00040818B /* AppDelegate.m */,
 				FBFE36A81BDC1EA00040818B /* ViewController.h */,
 				FBFE36A91BDC1EA00040818B /* ViewController.m */,
-				FB83C8321BE8D64C006DD880 /* Xkiaa.png */,
 				FBFE36AB1BDC1EA00040818B /* Main.storyboard */,
+				FB2CE24D1C03948A00D8862B /* AddCreditosViewController.h */,
+				FB2CE24E1C03948A00D8862B /* AddCreditosViewController.m */,
+				FB2CE2501C0394E200D8862B /* MinhaContaViewController.h */,
+				FB2CE2511C0394E200D8862B /* MinhaContaViewController.m */,
 				FBD09FB61BEA180400EABA9B /* VeiculosTableViewController.h */,
 				FBD09FB71BEA180400EABA9B /* VeiculosTableViewController.m */,
 				FBD09FB91BEA186500EABA9B /* VeiculosViewController.h */,
@@ -205,6 +205,10 @@
 		FBFE36A21BDC1EA00040818B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FBCA801E1C06209300B9B29D /* Logo3.png */,
+				FB83C8321BE8D64C006DD880 /* Xkiaa.png */,
+				FB718DE51C025246000ABAB9 /* Background APP.jpg */,
+				FB718DE61C025246000ABAB9 /* button white.png */,
 				FBFE36A31BDC1EA00040818B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -337,6 +341,9 @@
 				FBFE36B51BDC1EA00040818B /* LaunchScreen.storyboard in Resources */,
 				FBFE36B21BDC1EA00040818B /* Assets.xcassets in Resources */,
 				FB83C8331BE8D64C006DD880 /* Xkiaa.png in Resources */,
+				FBCA801F1C06209300B9B29D /* Logo3.png in Resources */,
+				FB718DE71C025246000ABAB9 /* Background APP.jpg in Resources */,
+				FB718DE81C025246000ABAB9 /* button white.png in Resources */,
 				FBFE36AD1BDC1EA00040818B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,20 +372,19 @@
 				FBD09FBB1BEA186500EABA9B /* VeiculosViewController.m in Sources */,
 				FBFE36F41BDC20110040818B /* HistoricoTableViewController.m in Sources */,
 				FBFE36AA1BDC1EA00040818B /* ViewController.m in Sources */,
-				FBFE36FE1BDC20110040818B /* ViewControllerHistorico.m in Sources */,
-				FBFE36F81BDC20110040818B /* MinhaContaTableViewController.m in Sources */,
 				FBFE36A71BDC1EA00040818B /* AppDelegate.m in Sources */,
 				FBFE36A41BDC1EA00040818B /* main.m in Sources */,
 				FBFE36F61BDC20110040818B /* MenuViewController.m in Sources */,
+				FB2CE2521C0394E200D8862B /* MinhaContaViewController.m in Sources */,
 				FBFE36F91BDC20110040818B /* UtilizaVagaViewController.m in Sources */,
 				FBFE36FF1BDC20110040818B /* ViewControllerLogin.m in Sources */,
 				FBFE36FB1BDC20110040818B /* ViewControllerCadastro.m in Sources */,
 				FBFE36F71BDC20110040818B /* MeusVeiculosTableViewController.m in Sources */,
 				FBD09FB81BEA180400EABA9B /* VeiculosTableViewController.m in Sources */,
 				FBFE36B01BDC1EA00040818B /* EstacionApp.xcdatamodeld in Sources */,
+				FB2CE24F1C03948A00D8862B /* AddCreditosViewController.m in Sources */,
 				FBFE36FC1BDC20110040818B /* ViewControllerConfigura.m in Sources */,
 				FBFE36FD1BDC20110040818B /* ViewControllerEsqueceuSenha.m in Sources */,
-				FBFE37011BDC20110040818B /* ViewControllerMinhaConta.m in Sources */,
 				FBFE36FA1BDC20110040818B /* ViewControllerCadastraVeiculo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
