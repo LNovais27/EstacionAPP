@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB718DDE1C00CDB4000ABAB9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB718DDD1C00CDB4000ABAB9 /* CoreData.framework */; };
+		FB718DE01C024981000ABAB9 /* Background APP.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB718DDF1C024981000ABAB9 /* Background APP.jpg */; settings = {ASSET_TAGS = (); }; };
+		FB718DE21C024C5E000ABAB9 /* expences-button-png-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = FB718DE11C024C5E000ABAB9 /* expences-button-png-hi.png */; settings = {ASSET_TAGS = (); }; };
+		FB718DE41C024EC8000ABAB9 /* button white.png in Resources */ = {isa = PBXBuildFile; fileRef = FB718DE31C024EC8000ABAB9 /* button white.png */; settings = {ASSET_TAGS = (); }; };
+		FBB2E7A91C00B9B200EFE843 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB2E7A81C00B9B200EFE843 /* main.m */; };
+		FBB2E7AC1C00B9B200EFE843 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB2E7AB1C00B9B200EFE843 /* AppDelegate.m */; };
+		FBB2E7B21C00B9B200EFE843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB2E7B01C00B9B200EFE843 /* Main.storyboard */; };
+		FBB2E7B51C00B9B200EFE843 /* EstacionAPPFiscal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBB2E7B31C00B9B200EFE843 /* EstacionAPPFiscal.xcdatamodeld */; };
+		FBB2E7B71C00B9B200EFE843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB2E7B61C00B9B200EFE843 /* Assets.xcassets */; };
+		FBB2E7BA1C00B9B200EFE843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB2E7B81C00B9B200EFE843 /* LaunchScreen.storyboard */; };
+		FBB2E7C31C00BAD600EFE843 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB2E7C21C00BAD600EFE843 /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FBB2E7C51C00BDB800EFE843 /* bob_esponja_ok.gif in Resources */ = {isa = PBXBuildFile; fileRef = FBB2E7C41C00BDB800EFE843 /* bob_esponja_ok.gif */; settings = {ASSET_TAGS = (); }; };
+		FBB2E7C81C00C08A00EFE843 /* VerificaVeiculoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB2E7C71C00C08A00EFE843 /* VerificaVeiculoViewController.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB718DDD1C00CDB4000ABAB9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FB718DDF1C024981000ABAB9 /* Background APP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Background APP.jpg"; sourceTree = "<group>"; };
+		FB718DE11C024C5E000ABAB9 /* expences-button-png-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "expences-button-png-hi.png"; sourceTree = "<group>"; };
+		FB718DE31C024EC8000ABAB9 /* button white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button white.png"; sourceTree = "<group>"; };
+		FBB2E7A41C00B9B200EFE843 /* EstacionAPPFiscal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EstacionAPPFiscal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB2E7A81C00B9B200EFE843 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBB2E7AA1C00B9B200EFE843 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBB2E7AB1C00B9B200EFE843 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBB2E7B11C00B9B200EFE843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBB2E7B41C00B9B200EFE843 /* EstacionAPPFiscal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EstacionAPPFiscal.xcdatamodel; sourceTree = "<group>"; };
+		FBB2E7B61C00B9B200EFE843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBB2E7B91C00B9B200EFE843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBB2E7BB1C00B9B200EFE843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB2E7C11C00BAD600EFE843 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FBB2E7C21C00BAD600EFE843 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FBB2E7C41C00BDB800EFE843 /* bob_esponja_ok.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bob_esponja_ok.gif; sourceTree = "<group>"; };
+		FBB2E7C61C00C08A00EFE843 /* VerificaVeiculoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerificaVeiculoViewController.h; sourceTree = "<group>"; };
+		FBB2E7C71C00C08A00EFE843 /* VerificaVeiculoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerificaVeiculoViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBB2E7A11C00B9B200EFE843 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB718DDE1C00CDB4000ABAB9 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBB2E79B1C00B9B200EFE843 = {
+			isa = PBXGroup;
+			children = (
+				FB718DDD1C00CDB4000ABAB9 /* CoreData.framework */,
+				FBB2E7A61C00B9B200EFE843 /* EstacionAPPFiscal */,
+				FBB2E7A51C00B9B200EFE843 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBB2E7A51C00B9B200EFE843 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2E7A41C00B9B200EFE843 /* EstacionAPPFiscal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBB2E7A61C00B9B200EFE843 /* EstacionAPPFiscal */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2E7AA1C00B9B200EFE843 /* AppDelegate.h */,
+				FBB2E7AB1C00B9B200EFE843 /* AppDelegate.m */,
+				FBB2E7C11C00BAD600EFE843 /* LoginViewController.h */,
+				FBB2E7C21C00BAD600EFE843 /* LoginViewController.m */,
+				FBB2E7C61C00C08A00EFE843 /* VerificaVeiculoViewController.h */,
+				FBB2E7C71C00C08A00EFE843 /* VerificaVeiculoViewController.m */,
+				FBB2E7B01C00B9B200EFE843 /* Main.storyboard */,
+				FBB2E7B61C00B9B200EFE843 /* Assets.xcassets */,
+				FBB2E7B81C00B9B200EFE843 /* LaunchScreen.storyboard */,
+				FBB2E7BB1C00B9B200EFE843 /* Info.plist */,
+				FBB2E7B31C00B9B200EFE843 /* EstacionAPPFiscal.xcdatamodeld */,
+				FBB2E7A71C00B9B200EFE843 /* Supporting Files */,
+			);
+			path = EstacionAPPFiscal;
+			sourceTree = "<group>";
+		};
+		FBB2E7A71C00B9B200EFE843 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB718DDF1C024981000ABAB9 /* Background APP.jpg */,
+				FBB2E7A81C00B9B200EFE843 /* main.m */,
+				FBB2E7C41C00BDB800EFE843 /* bob_esponja_ok.gif */,
+				FB718DE31C024EC8000ABAB9 /* button white.png */,
+				FB718DE11C024C5E000ABAB9 /* expences-button-png-hi.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBB2E7A31C00B9B200EFE843 /* EstacionAPPFiscal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB2E7BE1C00B9B200EFE843 /* Build configuration list for PBXNativeTarget "EstacionAPPFiscal" */;
+			buildPhases = (
+				FBB2E7A01C00B9B200EFE843 /* Sources */,
+				FBB2E7A11C00B9B200EFE843 /* Frameworks */,
+				FBB2E7A21C00B9B200EFE843 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EstacionAPPFiscal;
+			productName = EstacionAPPFiscal;
+			productReference = FBB2E7A41C00B9B200EFE843 /* EstacionAPPFiscal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBB2E79C1C00B9B200EFE843 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Thevelopers;
+				TargetAttributes = {
+					FBB2E7A31C00B9B200EFE843 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 282NRSN99U;
+					};
+				};
+			};
+			buildConfigurationList = FBB2E79F1C00B9B200EFE843 /* Build configuration list for PBXProject "EstacionAPPFiscal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBB2E79B1C00B9B200EFE843;
+			productRefGroup = FBB2E7A51C00B9B200EFE843 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBB2E7A31C00B9B200EFE843 /* EstacionAPPFiscal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBB2E7A21C00B9B200EFE843 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB2E7BA1C00B9B200EFE843 /* LaunchScreen.storyboard in Resources */,
+				FB718DE21C024C5E000ABAB9 /* expences-button-png-hi.png in Resources */,
+				FBB2E7C51C00BDB800EFE843 /* bob_esponja_ok.gif in Resources */,
+				FBB2E7B71C00B9B200EFE843 /* Assets.xcassets in Resources */,
+				FB718DE01C024981000ABAB9 /* Background APP.jpg in Resources */,
+				FBB2E7B21C00B9B200EFE843 /* Main.storyboard in Resources */,
+				FB718DE41C024EC8000ABAB9 /* button white.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBB2E7A01C00B9B200EFE843 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB2E7AC1C00B9B200EFE843 /* AppDelegate.m in Sources */,
+				FBB2E7A91C00B9B200EFE843 /* main.m in Sources */,
+				FBB2E7B51C00B9B200EFE843 /* EstacionAPPFiscal.xcdatamodeld in Sources */,
+				FBB2E7C31C00BAD600EFE843 /* LoginViewController.m in Sources */,
+				FBB2E7C81C00C08A00EFE843 /* VerificaVeiculoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FBB2E7B01C00B9B200EFE843 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBB2E7B11C00B9B200EFE843 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBB2E7B81C00B9B200EFE843 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBB2E7B91C00B9B200EFE843 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBB2E7BC1C00B9B200EFE843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FBB2E7BD1C00B9B200EFE843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBB2E7BF1C00B9B200EFE843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EstacionAPPFiscal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Thevelopers.EstacionAPPFiscal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBB2E7C01C00B9B200EFE843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EstacionAPPFiscal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Thevelopers.EstacionAPPFiscal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBB2E79F1C00B9B200EFE843 /* Build configuration list for PBXProject "EstacionAPPFiscal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB2E7BC1C00B9B200EFE843 /* Debug */,
+				FBB2E7BD1C00B9B200EFE843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB2E7BE1C00B9B200EFE843 /* Build configuration list for PBXNativeTarget "EstacionAPPFiscal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB2E7BF1C00B9B200EFE843 /* Debug */,
+				FBB2E7C01C00B9B200EFE843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FBB2E7B31C00B9B200EFE843 /* EstacionAPPFiscal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FBB2E7B41C00B9B200EFE843 /* EstacionAPPFiscal.xcdatamodel */,
+			);
+			currentVersion = FBB2E7B41C00B9B200EFE843 /* EstacionAPPFiscal.xcdatamodel */;
+			path = EstacionAPPFiscal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FBB2E79C1C00B9B200EFE843 /* Project object */;
+}
